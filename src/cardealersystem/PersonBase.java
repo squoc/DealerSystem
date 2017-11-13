@@ -21,4 +21,8 @@ public abstract class PersonBase {
         String baseInfo = "Name: " + this.firstName + " " + this.lastName + "\nAddress: " + this.address;
         return baseInfo;
     }
+
+    public String getFullName(){
+        return this.firstName + " " + this.lastName;
+    }
 }

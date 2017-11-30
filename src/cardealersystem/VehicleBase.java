@@ -1,12 +1,12 @@
 package cardealersystem;
 
 public abstract class VehicleBase {
-    public String VIN;
-    public String color;
-    public String make;
-    public double retailPrice;
-    public int MPG;
-    public int horsePower;
+    private String VIN;
+    private String color;
+    private String make;
+    private double retailPrice;
+    private int MPG;
+    private int horsePower;
 
     public VehicleBase(String vin, String make, String color, double retailPrice, int mpg, int horsePower) {
         this.VIN = vin;
@@ -14,6 +14,10 @@ public abstract class VehicleBase {
         this.color = color;
         this.retailPrice = retailPrice;
         this.horsePower = horsePower;
+    }
+
+    public String getVIN() {
+        return this.VIN;
     }
 
     public String getVehicleInfo() {
